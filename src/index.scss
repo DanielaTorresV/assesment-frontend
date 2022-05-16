@@ -1,3 +1,5 @@
+@import "./App.scss";
+
 /* abstracts */
 @import "./styles/abstracts/variables";
 @import "./styles/abstracts/mixins";
@@ -7,5 +9,13 @@
 @import "./styles/base/resets";
 
 /* components */
+@import "./styles/components/ButtonHeader.scss";
+@import "./styles/components/NavHeader.scss";
 
 /* pages */
+@import "./styles/pages/Home.scss";
+@import "./styles/pages/About.scss";
+@import "./styles/pages/ProductDetail.scss";
+
+/* mixins */
+@import "./styles/abstracts/mixins"

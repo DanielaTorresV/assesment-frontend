@@ -1,0 +1,10 @@
+.linkHeader{
+    display: flex;
+}
+.buttonHeader{
+    @include buttons();
+}
+
+.buttonHeader:hover{
+    background: #D2B4DE;
+}
