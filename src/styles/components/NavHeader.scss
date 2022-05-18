@@ -1,14 +1,22 @@
 .navHeader {
+    height: 40px;
+    position: fixed;
+    top: 0%;
     width: 100%;
     margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    background: rgba(241,226,241);
 }
 
 h1{
     margin-right: 400px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
+    @media (max-width: 768px) {
+        margin-right: 50px;
+        font-size: 15px;
+      }
 }
