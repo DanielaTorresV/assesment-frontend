@@ -32,6 +32,10 @@
     @include buttons();
 }
 
+.productDetail-button:hover{
+    background: #D2B4DE;
+}
+
 .productDetail-footer{
     display: flex;
     justify-content: space-between;

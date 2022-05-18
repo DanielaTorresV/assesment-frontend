@@ -2,11 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ProductDetail from "./pages/ProductDetail";
-
+import { DataProvider } from "./store/DataContext";
 
 function App() {
   return (
-    <div className="App">
+    <DataProvider>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -14,7 +14,7 @@ function App() {
           <Route exact path="/detail" element={<ProductDetail />} />
         </Routes>
       </BrowserRouter>
-    </div>
+      </DataProvider>
   );
 }
 
