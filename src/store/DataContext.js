@@ -1,5 +1,5 @@
-import { createContext, useState } from "react";
-import axios from "axios";
+import { createContext, useState } from 'react';
+import axios from 'axios';
 
 export const DataContext = createContext();
 
@@ -8,7 +8,7 @@ export const DataProvider = ({ children }) => {
 
   const handleGetApi = () => {
     axios
-      .get("https://fakestoreapi.com/products")
+      .get('https://fakestoreapi.com/products')
       .then((response) => {
         console.log(response.data);
         setData(response.data);
