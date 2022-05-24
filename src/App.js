@@ -19,7 +19,7 @@ function App() {
         />
         <Route
           exact
-          path="/detail"
+          path="/detail/:id"
           element={<ProductDetail />}
         />
       </Routes>
