@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ButtonDetail from './ButtonDetail';
 
 const ProductCard = () => {
   const [data, setData] = useState([]);
-  axios
-    .get('https://fakestoreapi.com/products')
-    .then((response) => {
+
+  useEffect(() => {
+    axios.get('https://fakestoreapi.com/products').then((response) => {
       setData(response.data);
-    })
-    .catch((error) => {
-      console.log(error);
     });
+  });
 
   return (
     <>
@@ -28,7 +25,7 @@ const ProductCard = () => {
             <div className="productDetail-body">
               <h3 className="productDetail-title">{item.title}</h3>
               <div className="productDetail-footer">
-                <ButtonDetail />
+                <button className="buttonHeader"> Go to detail</button>
                 <p>Time</p>
               </div>
             </div>
