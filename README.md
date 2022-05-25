@@ -16,6 +16,12 @@ Requerimientos
 
 * Para la solución del proyecto se usaron solo Hooks, en la lógica de programación para desactivar el Link, del botón Go to detail, se hizo dentro del componente Time, pero en la renderización no funciona, puede ser por el comportamiento que tiene el timer, adicional se probo realz un estado global con el time y con la misma lógica para inhabilitar el botón pero no genera timer random para cada Card.
 
+IMÁGENES
+
+## Home
+
+<img src = "/src/assets/ParaREADME/Home.PNG" alt="Home Page"/>
+
 # Daniela María Torres Vélez
 
 Punto 2:
