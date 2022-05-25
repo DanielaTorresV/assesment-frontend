@@ -14,19 +14,29 @@ Requerimientos
 - El código del proyecto debe estar en un repositorio público de tu autoría.
 - Bonus: Implementar SASS con BEM.
 
-* Para la solución del proyecto se usaron solo Hooks, en la lógica de programación para desactivar el Link, del botón Go to detail, se hizo dentro del componente Time, pero en la renderización no funciona, puede ser por el comportamiento que tiene el timer, adicional se probo realz un estado global con el time y con la misma lógica para inhabilitar el botón pero no genera timer random para cada Card.
+Acerca de la Solución
 
-IMÁGENES
+- Para la solución del proyecto se usaron solo Hooks, en la lógica de programación para desactivar el Link, del botón Go to detail, se hizo dentro del componente Time, pero en la renderización no funciona, puede ser por el comportamiento que tiene el timer, adicional se probo realz un estado global con el time y con la misma lógica para inhabilitar el botón pero no genera timer random para cada Card.
 
-## Home
+## IMÁGENES
+
+## Home Page
 
 <img src = "/src/assets/ParaREADME/Home.PNG" alt="Home Page"/>
 
+## About Page
+
+<img src = "/src/assets/ParaREADME/About.PNG" alt="About Page"/>
+
+## Detail Page
+
+<img src = "/src/assets/ParaREADME/Detail.PNG" alt="Detail Page"/>
+
 # Daniela María Torres Vélez
 
-Punto 2:
+# Punto 2:
 
-# Preguntas
+## Preguntas
 
 - ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
   R/Sprint planning: se planea el sprinti y se crean las historias de usuario (entregables) para dicho sprint.
@@ -62,48 +72,48 @@ Punto 2:
 - Dado el siguiente codePen, el cual solo tiene un HTML, por medio de css llegar a esta respuesta. Imagen.
   (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
 
-R/.c-section{
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: 20px 45px;
+R/.c-section{  
+display: flex;  
+flex-direction: column;  
+justify-content: center;  
+margin: 20px 45px;  
 }
 
-.c-services{
-width:100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin: 0;
-padding: 0;
+.c-services{  
+width:100%;  
+display: flex;  
+flex-wrap: wrap;  
+justify-content: center;  
+margin: 0;  
+padding: 0;  
 }
 
-.c-section\_\_title{
-width: 100%;
-padding-top: 20px;
-text-align: center;
+.c-section\_\_title{  
+width: 100%;  
+padding-top: 20px;  
+text-align: center;  
 background-color: gray;
 
-margin-bottom: 30px;
+margin-bottom: 30px;  
 }
 
-span{
-padding-left: 560px;
-padding-right: 550px;
-padding-top: 10px;
-padding-bottom: 10px;
-background-color: black;
-color: white;
+span{  
+padding-left: 560px;  
+padding-right: 550px;  
+padding-top: 10px;  
+padding-bottom: 10px;  
+background-color: black;  
+color: white;  
 }
 
-.c-services\_\_item{
-width: 45%;
-background-color: #EBEDEF;
-padding: 15px 10px;
-margin: 10px;
-list-style:none
+.c-services\_\_item{  
+width: 45%;  
+background-color: #EBEDEF;  
+padding: 15px 10px;  
+margin: 10px;  
+list-style:none  
 }
 
-h3{
-padding-left: 50px;
+h3{  
+padding-left: 50px;  
 }
