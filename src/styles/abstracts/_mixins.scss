@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+@mixin buttons (){
+    background-color: #7D4587;
+    border: 1px solid #EBEDEF;
+    color: white;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    cursor: pointer;
+}

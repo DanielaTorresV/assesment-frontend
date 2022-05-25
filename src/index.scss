@@ -1,3 +1,5 @@
+@import "./App.scss";
+
 /* abstracts */
 @import "./styles/abstracts/variables";
 @import "./styles/abstracts/mixins";
@@ -7,5 +9,26 @@
 @import "./styles/base/resets";
 
 /* components */
+@import "./styles/components/ButtonHeader.scss";
+@import "./styles/components/NavHeader.scss";
+@import "./styles/components/ProductCard.scss";
 
 /* pages */
+@import "./styles/pages/Home.scss";
+@import "./styles/pages/About.scss";
+@import "./styles/pages/ProductDetail.scss";
+
+/* mixins */
+@import "./styles/abstracts/mixins";
+
+/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #34495E;
+    background: rgb(222,130,219);
+    background: linear-gradient(180deg, rgb(242,183,240) 0%, rgba(241,226,241,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}

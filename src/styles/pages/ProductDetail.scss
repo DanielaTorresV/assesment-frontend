@@ -1,0 +1,29 @@
+.productDetail-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 50px;
+    padding: 30px;
+    h1{
+        text-align: center;
+    }
+    p{
+        margin: 5px;
+    }
+}
+
+.productDetail-pageImg{
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.productDetail-pageContainer2{
+    display: flex;
+}
+
+.subtitle{
+    font-weight: 600;
+}

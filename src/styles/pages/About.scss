@@ -1,0 +1,21 @@
+.containerAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 100px;
+    padding: 5px, 20px;
+    width: 80%;
+    font-size: 15px;
+    @media (max-width: 768px) {
+        width: 50%;
+        font-size: 12px;
+      }
+}
+
+.containerAbout-img{
+    height: 250px;
+    @media (max-width: 768px) {
+        display: none;
+      }
+}
