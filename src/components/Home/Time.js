@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
-const Time = () => {
+const Time = (props) => {
   // We need ref in this, because we are dealing
   // with JS setInterval to keep track of it and
   // stop it when needed
@@ -56,11 +57,23 @@ const Time = () => {
   useEffect(() => {
     clearTimer(getDeadTime());
   }, []);
-
+  console.log({ timer });
   return (
-    <div className="App">
-      <h2>{timer}</h2>
-    </div>
+    <>
+      {{ timer } === { timer: '00:00:00' } ? (
+        <div className="productDetail-footer">
+          <button className="buttonHeader"> Go to detail</button>
+          <h5>{timer}</h5>
+        </div>
+      ) : (
+        <div className="productDetail-footer">
+          <Link to={props.route}>
+            <button className="buttonHeader"> Go to detail</button>
+          </Link>
+          <h5>{timer}</h5>
+        </div>
+      )}
+    </>
   );
 };
 export default Time;
