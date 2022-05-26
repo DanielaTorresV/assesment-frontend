@@ -1,79 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Time = (props) => {
-  // We need ref in this, because we are dealing
-  // with JS setInterval to keep track of it and
-  // stop it when needed
-  const Ref = useRef(null);
-
-  // The state for our timer
-  const [timer, setTimer] = useState('00:00:00');
-
-  const getTimeRemaining = (e) => {
-    const total = Date.parse(e) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor(((total / 1000) * 60 * 60) % 24);
-    return {
-      total,
-      hours,
-      minutes,
-      seconds,
-    };
-  };
-
-  const startTimer = (e) => {
-    let { total, hours, minutes, seconds } = getTimeRemaining(e);
-    if (total >= 0) {
-      // update the timer
-      // check if less than 10 then we need to
-      // add '0' at the begining of the variable
-      setTimer(
-        (hours > 9 ? hours : '0' + hours) +
-          ':' +
-          (minutes > 9 ? minutes : '0' + minutes) +
-          ':' +
-          (seconds > 9 ? seconds : '0' + seconds)
-      );
-    }
-  };
-
-  const clearTimer = (e) => {
-    const id = setInterval(() => {
-      startTimer(e);
-    }, 1000);
-    Ref.current = id;
-  };
-
-  const getDeadTime = () => {
-    let deadline = new Date();
-
-    deadline.setSeconds(deadline.getSeconds() + Math.random() * 60);
-    deadline.setMinutes(deadline.getMinutes() + Math.random() * 2);
-    return deadline;
-  };
-
+  const [seconds, setSeconds] = useState(Math.floor(Math.random() * 180));
   useEffect(() => {
-    clearTimer(getDeadTime());
-  }, []);
-  console.log({ timer });
+    const timer =
+      seconds > 0 && setInterval(() => setSeconds(seconds - 1), 1000);
+    return () => clearInterval(timer);
+  }, [seconds]);
   return (
-    <>
-      {{ timer } === { timer: '00:00:00' } ? (
-        <div className="productDetail-footer">
+    <div className="productDetail-footer">
+      {seconds > 0 ? (
+        <Link to={props.route}>
           <button className="buttonHeader"> Go to detail</button>
-          <h5>{timer}</h5>
-        </div>
+        </Link>
       ) : (
-        <div className="productDetail-footer">
-          <Link to={props.route}>
-            <button className="buttonHeader"> Go to detail</button>
-          </Link>
-          <h5>{timer}</h5>
-        </div>
+        <p className="productDetail-footerOver">Time is Over</p>
       )}
-    </>
+      <h5>{seconds} Sec</h5>
+    </div>
   );
 };
 export default Time;

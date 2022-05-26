@@ -17,9 +17,8 @@ Requerimientos
 Acerca de la Solución
 
 - Para la solución del proyecto se usaron solo Hooks, en la lógica de programación para desactivar el Link,
-  del botón Go to detail, se hizo dentro del componente Time, pero en la renderización no funciona, puede ser
-  por el comportamiento que tiene el timer, adicional se probo realizar un estado global con el time y con la
-  misma lógica para inhabilitar el botón, pero no genera timers random para cada Card.
+  del botón Go to detail, se hizo dentro del componente Time con el operador ternario. Igual en la página de
+  producto se uso operador ternario para un tiempo de espera en el momento de renderizar el objeto específico.
 
 ## IMÁGENES
 
