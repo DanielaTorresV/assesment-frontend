@@ -24,7 +24,7 @@ Acerca de la Solución
 
 ## Home Page
 
-<img src = "/src/assets/ParaREADME/Home.PNG" alt="Home Page"/>
+<img src = "/src/assets/ParaREADME/Landing.PNG" alt="Home Page"/>
 
 ## About Page
 
